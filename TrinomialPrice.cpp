@@ -28,7 +28,7 @@ TrinomialPrice::buildLattice(Node* t)
 {
     if(t==nullptr){
         t = new Node(option->spotPrice);
-        t->level=0;
+        t->level=1;
         lattice->root=t;
     }
     Node* unode = new Node(t->data.sharePrice*u);
